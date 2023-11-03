@@ -34,12 +34,13 @@ const SubTitle = styled.div`
   font-size: 3vw;
   font-weight: 500;
   width: 35vw;
-  margin-top: 2vw;
+  margin-top: 8vw;
 
   @media (max-width: ${queries.medium}px) {
     font-size: 4vw;
     width: 80vw;
     height: 30vh;
+    margin-top: 2vw;
   }
 
   @media (max-width: ${queries.small}px) {

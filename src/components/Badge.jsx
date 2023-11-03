@@ -17,8 +17,6 @@ const BadgeContainer = styled.div`
   background: ${colors.secondary};
   width: 40vw;
   height: 40vw;
-  max-width: 30rem;
-  max-height: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
