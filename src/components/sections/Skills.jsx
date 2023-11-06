@@ -125,6 +125,8 @@ function Skills() {
             <span>React</span>
             <span>Redux</span>
             <span>SASS</span>
+            <span>Jest</span>
+            <span>SEO</span>
             <span>Figma</span>
             <span>GitHub</span>
             <span>Swagger</span>

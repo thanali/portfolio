@@ -12,11 +12,13 @@ import bow from "../assets/icons/bow-tie.svg"
 
 const BadgeContainer = styled.div`
   position: relative;
-  border: 4px solid ${colors.primary};
+  border: 5px solid ${colors.primary};
   border-radius: 50%;
   background: ${colors.secondary};
   width: 40vw;
   height: 40vw;
+  // max-width: 40rem;
+  // max-height: 40rem;
   display: flex;
   justify-content: center;
   align-items: center;

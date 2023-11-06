@@ -9,11 +9,11 @@ const Show = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  height: 10rem;
+  height: 15rem;
   border-top: 3px solid ${colors.light};
 
   @media (max-width: ${queries.smallProject}px) {
-    height: 12rem;
+    height: 21rem;
   }
 `
 
@@ -23,27 +23,44 @@ const Content = styled.div`
   align-items: center;
   width: 100%;
 
-  @media (max-width: ${queries.smallProject}px) {
+  @media (max-width: ${queries.medium}px) {
     flex-direction: column;
   }
 `
 
 const TextContainer = styled.div`
-  text-align: end;
-  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2vw;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
   padding: 0 1rem;
   color: ${colors.dark};
 
-  @media (max-width: ${queries.smallProject}px) {
+  @media (max-width: ${queries.medium}px) {
+    display: block;
+    text-align: end;
+    width: 100%;
     padding: 0;
+  }
+
+  p {
+    margin-top: 0.5rem;
+    max-width: 55%;
+
+    @media (max-width: ${queries.medium}px) {
+      max-width: 100%;
+    }
   }
 `
 
 const ProjectTitle = styled.h4`
+  text-align: end;
   font-size: 3.5rem;
   font-weight: 100;
   letter-spacing: -2px;
-  line-height: 3.5rem;
+  line-height: 3rem;
 `
 
 const Tools = styled.div`
@@ -55,10 +72,6 @@ const Tools = styled.div`
   text-align: center;
 
   @media (max-width: ${queries.medium}px) {
-    width: 41%;
-  }
-
-  @media (max-width: ${queries.smallProject}px) {
     margin-top: 1rem;
     width: 100%;
   }
@@ -84,13 +97,19 @@ const ContentHovered = styled.div`
 
 const Image = styled.img`
   position: absolute;
-  top: -6vw;
+  top: -4vw;
   object-fit: cover;
   z-index: 2;
   width: 35vw;
   margin-left: 8vw;
   transform: rotate(-4deg);
   pointer-events: none;
+
+  @media (max-width: ${queries.medium}px) {
+    top: 0vw;
+    width: 45vw;
+    margin-left: 5vw;
+  }
 
   @media (max-width: ${queries.smallProject}px) {
     display: none;
@@ -103,14 +122,14 @@ const Scroll = keyframes`
 
 const TextHovered = styled.p`
   width: fit-content;
-  font-size: 5rem;
+  font-size: 8rem;
   opacity: 0.5;
   color: ${colors.light};
   font-weight: 100;
   animation: ${Scroll} 10s linear infinite;
 
   @media (max-width: ${queries.smallProject}px) {
-    font-size: 6rem;
+    font-size: 10rem;
   }
 `
 
@@ -170,7 +189,7 @@ function Project({
   // Slider projects
   useEffect(() => {
     const nextSlide = () => {
-      if (images && images?.length > 0) {
+      if (images && images?.length > 0 && hovered) {
         setCurrentSlide(
           currentSlide < images?.length - 1 ? currentSlide + 1 : 0
         )
@@ -230,6 +249,7 @@ export default Project
 Project.propTypes = {
   url: PropTypes.string,
   title: PropTypes.string,
+  // subtitle: PropTypes.string,
   description: PropTypes.string,
   images: PropTypes.array,
   tools: PropTypes.array,

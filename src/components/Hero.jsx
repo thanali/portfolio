@@ -11,6 +11,8 @@ import Badge from "./Badge"
 const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 5vw;
   margin: 0 10vw;
 
@@ -20,27 +22,18 @@ const HeroContainer = styled.div`
   }
 `
 
-const TextContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  @media (max-width: ${queries.medium}px) {
-    text-align: center;
-  }
-`
-
 const SubTitle = styled.div`
   font-size: 3vw;
   font-weight: 500;
   width: 35vw;
-  margin-top: 8vw;
+  height: 25vw;
 
   @media (max-width: ${queries.medium}px) {
     font-size: 4vw;
     width: 80vw;
     height: 30vh;
     margin-top: 2vw;
+    text-align: center;
   }
 
   @media (max-width: ${queries.small}px) {
@@ -134,14 +127,12 @@ function Hero() {
   return (
     <HeroContainer>
       <Badge />
-      <TextContent className="hero-text">
-        <SubTitle>
-          <p className="intro"></p>
-          <h1 className="name"></h1>
-          <h2 className="profession"></h2>
-          <p className="fact"></p>
-        </SubTitle>
-      </TextContent>
+      <SubTitle className="hero-text">
+        <p className="intro"></p>
+        <h1 className="name"></h1>
+        <h2 className="profession"></h2>
+        <p className="fact"></p>
+      </SubTitle>
     </HeroContainer>
   )
 }

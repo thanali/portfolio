@@ -51,8 +51,8 @@ function Showcase() {
         url={"https://github.com/thanali/OCP3"}
         images={[booki1, booki2, booki3]}
         title={"Booki"}
-        description={"Travel agency homepage"}
         tools={["html", "css"]}
+        description={`Developing a travel agency's website using HTML and CSS while implementing wireframe-based design.`}
         buttonSite
         urlSite={"https://thanali.github.io/OCP3/"}
       />
@@ -60,8 +60,8 @@ function Showcase() {
         url={"https://github.com/thanali/OCP4"}
         images={[OMF1, OMF2, OMF3]}
         title={"OhMyFood"}
-        description={`Mobile first app with CSS animations`}
         tools={["html", "sass"]}
+        description={`Mobile-first restaurant reservation app with UX-designed wireframes, CSS animations, and interactivity.`}
         buttonSite
         urlSite={"https://thanali.github.io/OCP4/"}
       />
@@ -69,22 +69,26 @@ function Showcase() {
         url={"https://github.com/thanali/OCP6"}
         images={[bluel1, bluel2, bluel3]}
         title={"Sophie Bluel"}
-        description={`Dynamic web page with JS`}
-        tools={["sass", "javascript"]}
+        description={`Enhanced the interior designer's portfolio website by creating interactive web pages with JavaScript and integrating API data.`}
+        tools={["html", "sass", "javascript"]}
       />
       <Project
         url={"https://github.com/thanali/OCP8"}
         images={[kasa1, kasa2, kasa3]}
         title={"Kasa"}
-        description={"Real estate rental app with React"}
-        tools={["sass", "react"]}
+        description={
+          "Redesigned the website, transitioning to a full JavaScript stack with Node.js and React, while implementing wireframe-based design."
+        }
+        tools={["html", "sass", "javascript", "react"]}
       />
       <Project
         url={"https://github.com/thanali/OCP9"}
         images={[carducci1, carducci2, carducci3]}
         title={"Nina Carducci"}
-        description={"SEO optimization"}
-        tools={["css", "javascript"]}
+        description={
+          "Provided SEO optimization services for a photographer, aiming to improve her website's search engine ranking and overall performance."
+        }
+        tools={["html", "css", "javascript", "seo"]}
         buttonSite
         urlSite={"https://thanali.github.io/OCP9/"}
       />
@@ -92,14 +96,18 @@ function Showcase() {
         url={"https://github.com/thanali/OCP10"}
         images={[events1, events2, events3]}
         title={"77events"}
-        description={"Debugging"}
-        tools={["sass", "react"]}
+        description={
+          "Debugged the event agency website, addressing remaining issues and bugs to ensure it operated smoothly according to the agency's requirements."
+        }
+        tools={["html", "sass", "react", "jest"]}
       />
       <Project
         url={"https://github.com/thanali/OCP11"}
         images={[argentBank1, argentBank2, argentBank3]}
         title={"ArgentBank"}
-        description={"Banking app with React and Redux"}
+        description={
+          "The first phase included user authentication and a user-friendly dashboard development, while the second phase focused on transaction management."
+        }
         tools={["sass", "react", "redux", "swagger"]}
       />
     </ShowcaseSection>
