@@ -188,25 +188,18 @@ function Project({
 
   // Slider projects
   useEffect(() => {
-    let timer
-
     const nextSlide = () => {
       if (images && images?.length > 0) {
         setCurrentSlide(
           currentSlide < images?.length - 1 ? currentSlide + 1 : 0
         )
       }
-      if (hovered) {
-        timer = setTimeout(nextSlide, 400)
-      }
     }
 
+    let timer
     if (hovered) {
       timer = setTimeout(nextSlide, 400)
-    } else {
-      clearTimeout(timer)
     }
-
     return () => {
       clearTimeout(timer)
     }
