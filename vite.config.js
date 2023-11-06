@@ -7,7 +7,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "/assets": "./src/assets",
-      "@pdf": "./src/assets/ResumeFR_2023.pdf"
+      "@pdffr": "./src/assets/ResumeFR_2023.pdf",
+      "@pdfeng": "./src/assets/ResumeENG_2023.pdf"
     }
   }
 })
