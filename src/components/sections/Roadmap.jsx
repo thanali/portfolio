@@ -9,6 +9,7 @@ import camp from "../../assets/icons/camping.svg"
 import airplane from "../../assets/icons/airplane.svg"
 import baggage from "../../assets/icons/baggage.webp"
 import film from "../../assets/icons/film-projector.webp"
+import pdf from "@pdf"
 
 const RoadSection = styled.section`
   position: relative;
@@ -91,6 +92,14 @@ function Roadmap() {
           content={`Studying cinema since high school and earning a Bachelor's degree in Performing Arts, I acquired the skills to become a multimedia 'jack-of-all-trades.' Conceiving, producing, editing, and publishing video projects are now second nature. This path led me to work as an editor at a communication agency.`}
         />
       </Cards>
+
+      <div>
+        <h1>PDF Link</h1>
+        <p>Click the link below to open the PDF:</p>
+        <a href={pdf} target="_blank" rel="noopener noreferrer">
+          Open PDF
+        </a>
+      </div>
     </RoadSection>
   )
 }
