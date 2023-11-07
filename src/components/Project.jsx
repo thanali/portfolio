@@ -207,13 +207,7 @@ function Project({
 
   return (
     <Show
-      onMouseEnter={() => {
-        if (!hovered) {
-          setIsHovered(true)
-        } else {
-          setIsHovered(false)
-        }
-      }}
+      onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}>
       <Content
         style={{
@@ -249,7 +243,6 @@ export default Project
 Project.propTypes = {
   url: PropTypes.string,
   title: PropTypes.string,
-  // subtitle: PropTypes.string,
   description: PropTypes.string,
   images: PropTypes.array,
   tools: PropTypes.array,
