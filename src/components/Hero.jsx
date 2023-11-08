@@ -116,11 +116,11 @@ function Hero() {
     })
     tl.to(".profession", {
       duration: 2,
-      text: "junior frontend developer "
+      text: "frontend developer "
     })
     tl.to(".fact", {
       duration: 2,
-      text: "and your next favorite contact !"
+      text: "and your next contact in favorite !"
     })
   }, [])
 

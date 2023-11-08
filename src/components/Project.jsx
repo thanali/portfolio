@@ -30,23 +30,20 @@ const Content = styled.div`
 
 const TextContainer = styled.div`
   display: flex;
-  flex-direction: row-reverse;
-  gap: 2vw;
+  flex-direction: column;
+  text-align: end;
+  gap: 0.5rem;
   width: 80%;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-end;
   padding: 0 1rem;
   color: ${colors.dark};
 
   @media (max-width: ${queries.medium}px) {
-    display: block;
-    text-align: end;
     width: 100%;
     padding: 0;
   }
 
   p {
-    margin-top: 0.5rem;
     max-width: 55%;
 
     @media (max-width: ${queries.medium}px) {
