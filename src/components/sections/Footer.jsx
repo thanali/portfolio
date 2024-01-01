@@ -45,6 +45,16 @@ const Socials = styled.div`
   }
 `
 
+const Copywrite = styled.p`
+  background: ${colors.light};
+  color: ${colors.secondary};
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  padding: 0.8rem;
+`
+
 function Footer() {
   return (
     <FooterContainer id="contact">
@@ -58,6 +68,9 @@ function Footer() {
           <img src={github} alt="lien gitHub" />
         </a>
       </Socials>
+      <Copywrite>
+        @ Built with Vite, deployed with Netlify and coded by Nathalie Lebon.
+      </Copywrite>
     </FooterContainer>
   )
 }

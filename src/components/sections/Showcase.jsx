@@ -81,6 +81,8 @@ function Showcase() {
           "Redesigned the website, transitioning to a full JavaScript stack with Node.js and React, while implementing wireframe-based design."
         }
         tools={["html", "sass", "javascript", "react"]}
+        buttonSite
+        urlSite={"https://thanali.github.io/OCP8"}
       />
       <Project
         url={"https://github.com/thanali/OCP6"}
