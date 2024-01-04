@@ -69,7 +69,8 @@ function Footer() {
         </a>
       </Socials>
       <Copywrite>
-        @ Built with Vite, deployed with Netlify and coded by Nathalie Lebon.
+        @ Built with React and Vite, deployed with Netlify and coded by Nathalie
+        Lebon.
       </Copywrite>
     </FooterContainer>
   )
