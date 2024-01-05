@@ -65,7 +65,7 @@ function Roadmap() {
           image={success}
           year="2023"
           title={"OpenClassrooms"}
-          content={`I made a career change and immersed myself in the dynamic field of development. Having successfully completed a comprehensive 9-month Web Integrator training, I am now actively seeking an apprenticeship as a JavaScript React Application Developer through OpenClassrooms.`}
+          content={`I made a career change and immersed myself in the dynamic field of development. Having successfully completed a comprehensive 9-month Web Integrator training, I am now actively seeking a position of Frontend Developper.`}
         />
         <Card
           image={camp}
