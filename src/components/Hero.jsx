@@ -11,7 +11,6 @@ import Badge from "./Badge"
 const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
   gap: 5vw;
   margin: 0 10vw;
