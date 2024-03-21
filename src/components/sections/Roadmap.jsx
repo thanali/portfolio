@@ -9,7 +9,7 @@ import camp from "../../assets/icons/camping.svg"
 import airplane from "../../assets/icons/airplane.svg"
 import baggage from "../../assets/icons/baggage.webp"
 import film from "../../assets/icons/film-projector.webp"
-import Resume from "../Resume"
+// import Resume from "../Resume"
 
 const RoadSection = styled.section`
   position: relative;
@@ -93,7 +93,7 @@ function Roadmap() {
         />
       </Cards>
 
-      <Resume />
+      {/* <Resume /> */}
     </RoadSection>
   )
 }
