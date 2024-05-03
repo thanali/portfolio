@@ -11,18 +11,15 @@ import events3 from "/assets/images/77events/77events_capture03.webp"
 import carducci1 from "/assets/images/nina_carducci/NCarducci_capture01.webp"
 import carducci2 from "/assets/images/nina_carducci/NCarducci_capture02.webp"
 import carducci3 from "/assets/images/nina_carducci/NCarducci_capture03.webp"
-import OMF1 from "/assets/images/ohmyfood/ohmyfood_capture01.webp"
-import OMF2 from "/assets/images/ohmyfood/ohmyfood_capture02.webp"
-import OMF3 from "/assets/images/ohmyfood/ohmyfood_capture03.webp"
-import bluel1 from "/assets/images/sophie_bluel/SBluel_capture01.webp"
-import bluel2 from "/assets/images/sophie_bluel/SBluel_capture02.webp"
-import bluel3 from "/assets/images/sophie_bluel/SBluel_capture03.webp"
 import kasa1 from "/assets/images/kasa/kasa_capture01.webp"
 import kasa2 from "/assets/images/kasa/kasa_capture02.webp"
 import kasa3 from "/assets/images/kasa/kasa_capture03.webp"
 import argentBank1 from "/assets/images/argentBank/argentBank_capture01.webp"
 import argentBank2 from "/assets/images/argentBank/argentBank_capture02.webp"
 import argentBank3 from "/assets/images/argentBank/argentBank_capture03.webp"
+// import vformation01 from "../../assets/images/vincent_formation/VF_capture01.webp"
+// import vformation02 from "../../assets/images/vincent_formation/VF_capture02.webp"
+// import vformation03 from "../../assets/images/vincent_formation/VF_capture03.webp"
 
 const ShowcaseSection = styled.section`
   background: ${colors.primary};
@@ -44,8 +41,18 @@ function Showcase() {
   return (
     <ShowcaseSection id="showcase">
       <ShowcaseTitle>Showcase</ShowcaseTitle>
+      {/* <Project
+        url={"https://github.com/thanali/vincent-formation"}
+        images={[vformation01, vformation02, vformation03]}
+        title={"Vincent Formation"}
+        description={
+          "Newly developed site using React for fast, interactive user experiences. Dive into a streamlined interface powered by cutting-edge technology."
+        }
+        tools={["sass", "react", "seo"]}
+        urlSite={"https://thanali.github.io/nina-carducci/"}
+      /> */}
       <Project
-        url={"https://github.com/thanali/OCP11"}
+        url={"https://github.com/thanali/argentBank"}
         images={[argentBank1, argentBank2, argentBank3]}
         title={"ArgentBank"}
         description={
@@ -54,7 +61,7 @@ function Showcase() {
         tools={["sass", "react", "redux", "swagger"]}
       />
       <Project
-        url={"https://github.com/thanali/OCP10"}
+        url={"https://github.com/thanali/77Events"}
         images={[events1, events2, events3]}
         title={"77events"}
         description={
@@ -63,7 +70,7 @@ function Showcase() {
         tools={["html", "sass", "react", "jest"]}
       />
       <Project
-        url={"https://github.com/thanali/OCP9"}
+        url={"https://github.com/thanali/nina-carducci"}
         images={[carducci1, carducci2, carducci3]}
         title={"Nina Carducci"}
         description={
@@ -71,34 +78,18 @@ function Showcase() {
         }
         tools={["html", "css", "javascript", "seo"]}
         buttonSite
-        urlSite={"https://thanali.github.io/OCP9/"}
+        urlSite={"https://thanali.github.io/nina-carducci/"}
       />
       <Project
-        url={"https://github.com/thanali/OCP8"}
+        url={"https://github.com/thanali/kasa"}
         images={[kasa1, kasa2, kasa3]}
         title={"Kasa"}
         description={
           "Redesigned the website, transitioning to a full JavaScript stack with Node.js and React, while implementing wireframe-based design."
         }
         tools={["html", "sass", "javascript", "react"]}
-        buttonSite
-        urlSite={"https://thanali.github.io/OCP8"}
-      />
-      <Project
-        url={"https://github.com/thanali/OCP6"}
-        images={[bluel1, bluel2, bluel3]}
-        title={"Sophie Bluel"}
-        description={`Enhanced the interior designer's portfolio website by creating interactive web pages with JavaScript and integrating API data.`}
-        tools={["html", "sass", "javascript"]}
-      />
-      <Project
-        url={"https://github.com/thanali/OCP4"}
-        images={[OMF1, OMF2, OMF3]}
-        title={"OhMyFood"}
-        tools={["html", "sass"]}
-        description={`Mobile-first restaurant reservation app with UX-designed wireframes, CSS animations, and interactivity.`}
-        buttonSite
-        urlSite={"https://thanali.github.io/OCP4/"}
+        // buttonSite
+        // urlSite={"https://thanali.github.io/kasa"}
       />
     </ShowcaseSection>
   )
