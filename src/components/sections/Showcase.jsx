@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styled from "styled-components"
 
 import colors from "../../style/colors"
@@ -42,15 +41,14 @@ function Showcase() {
     <ShowcaseSection id="showcase">
       <ShowcaseTitle>Showcase</ShowcaseTitle>
       <Project
-        url={"https://github.com/thanali/vincent-formation"}
+        buttonSite
+        urlSite={"https://www.vincent-formation.fr/"}
         images={[vformation01, vformation02, vformation03]}
         title={"Vincent Formation"}
         description={
           "Developed with React and TypeScript, this site showcases a management consultant's expertise, offering professional training and advisory services."
         }
         tools={["sass", "react", "typescript", "seo"]}
-        buttonSite
-        urlSite={"https://www.vincent-formation.fr/"}
       />
       <Project
         buttonCode
@@ -75,26 +73,26 @@ function Showcase() {
       <Project
         buttonCode
         urlCode={"https://github.com/thanali/nina-carducci"}
+        buttonSite
+        urlSite={"https://thanali.github.io/nina-carducci/"}
         images={[carducci1, carducci2, carducci3]}
         title={"Nina Carducci"}
         description={
           "Provided SEO optimization services for a photographer, aiming to improve her website's search engine ranking and overall performance."
         }
         tools={["html", "css", "javascript", "seo"]}
-        buttonSite
-        urlSite={"https://thanali.github.io/nina-carducci/"}
       />
       <Project
         buttonCode
         urlCode={"https://github.com/thanali/kasa"}
+        buttonSite
+        urlSite={"https://thanali.github.io/kasa"}
         images={[kasa1, kasa2, kasa3]}
         title={"Kasa"}
         description={
           "Redesigned the website, transitioning to a full JavaScript stack with Node.js and React, while implementing wireframe-based design."
         }
         tools={["html", "sass", "javascript", "react"]}
-        buttonSite
-        urlSite={"https://thanali.github.io/kasa"}
       />
     </ShowcaseSection>
   )
