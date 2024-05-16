@@ -171,11 +171,12 @@ const Button = styled.a`
 `
 
 function Project({
-  url,
+  urlCode,
   title,
   description,
   images = [],
   tools,
+  buttonCode,
   buttonSite,
   urlSite
 }) {
@@ -227,7 +228,7 @@ function Project({
         <TextHovered aria-hidden="true">{textDefil}</TextHovered>
         <TextHovered aria-hidden="true">{textDefil}</TextHovered>
         <ButtonContainer>
-          <Button href={url}>See the code</Button>
+          {buttonCode && <Button href={urlCode}>See the code</Button>}
           {buttonSite && <Button href={urlSite}>Visit the site</Button>}
         </ButtonContainer>
       </ContentHovered>
@@ -238,11 +239,12 @@ function Project({
 export default Project
 
 Project.propTypes = {
-  url: PropTypes.string,
+  urlCode: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
   images: PropTypes.array,
   tools: PropTypes.array,
+  buttonCode: PropTypes.bool,
   buttonSite: PropTypes.bool,
   urlSite: PropTypes.string
 }

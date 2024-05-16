@@ -17,9 +17,9 @@ import kasa3 from "/assets/images/kasa/kasa_capture03.webp"
 import argentBank1 from "/assets/images/argentBank/argentBank_capture01.webp"
 import argentBank2 from "/assets/images/argentBank/argentBank_capture02.webp"
 import argentBank3 from "/assets/images/argentBank/argentBank_capture03.webp"
-// import vformation01 from "../../assets/images/vincent_formation/VF_capture01.webp"
-// import vformation02 from "../../assets/images/vincent_formation/VF_capture02.webp"
-// import vformation03 from "../../assets/images/vincent_formation/VF_capture03.webp"
+import vformation01 from "../../assets/images/vincent_formation/VF_capture01.webp"
+import vformation02 from "../../assets/images/vincent_formation/VF_capture02.webp"
+import vformation03 from "../../assets/images/vincent_formation/VF_capture03.webp"
 
 const ShowcaseSection = styled.section`
   background: ${colors.primary};
@@ -41,18 +41,20 @@ function Showcase() {
   return (
     <ShowcaseSection id="showcase">
       <ShowcaseTitle>Showcase</ShowcaseTitle>
-      {/* <Project
+      <Project
         url={"https://github.com/thanali/vincent-formation"}
         images={[vformation01, vformation02, vformation03]}
         title={"Vincent Formation"}
         description={
-          "Newly developed site using React for fast, interactive user experiences. Dive into a streamlined interface powered by cutting-edge technology."
+          "Developed with React and TypeScript, this site showcases a management consultant's expertise, offering professional training and advisory services."
         }
-        tools={["sass", "react", "seo"]}
-        urlSite={"https://thanali.github.io/nina-carducci/"}
-      /> */}
+        tools={["sass", "react", "typescript", "seo"]}
+        buttonSite
+        urlSite={"https://www.vincent-formation.fr/"}
+      />
       <Project
-        url={"https://github.com/thanali/argentBank"}
+        buttonCode
+        urlCode={"https://github.com/thanali/argentBank"}
         images={[argentBank1, argentBank2, argentBank3]}
         title={"ArgentBank"}
         description={
@@ -61,7 +63,8 @@ function Showcase() {
         tools={["sass", "react", "redux", "swagger"]}
       />
       <Project
-        url={"https://github.com/thanali/77Events"}
+        buttonCode
+        urlCode={"https://github.com/thanali/77Events"}
         images={[events1, events2, events3]}
         title={"77events"}
         description={
@@ -70,7 +73,8 @@ function Showcase() {
         tools={["html", "sass", "react", "jest"]}
       />
       <Project
-        url={"https://github.com/thanali/nina-carducci"}
+        buttonCode
+        urlCode={"https://github.com/thanali/nina-carducci"}
         images={[carducci1, carducci2, carducci3]}
         title={"Nina Carducci"}
         description={
@@ -81,7 +85,8 @@ function Showcase() {
         urlSite={"https://thanali.github.io/nina-carducci/"}
       />
       <Project
-        url={"https://github.com/thanali/kasa"}
+        buttonCode
+        urlCode={"https://github.com/thanali/kasa"}
         images={[kasa1, kasa2, kasa3]}
         title={"Kasa"}
         description={
